@@ -16,9 +16,9 @@ Build an AWS Lambda function in Python that uses Boto3 to communicate with Amazo
 - IT automation
 
 ## Steps to setup env:
-- Build a virtual environment
-`python3 -m venv ~/.venv`
-`source ~/.venv/bin/activate`
+1. Build a virtual environment
+- `python3 -m venv ~/.venv`
+- `source ~/.venv/bin/activate`
 
-- Install libraries with the Makefile
-`make install`
+2. Install libraries with the Makefile
+- `make install`
