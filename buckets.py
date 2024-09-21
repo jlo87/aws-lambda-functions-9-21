@@ -16,6 +16,8 @@ def number_of_buckets(num):
             # Keep processing
             current_bucket = bucket['Name']
             print(f"Found Bucket: {current_bucket}")
+            # Functions Logs from Lambda:
+            # START RequestId: c... Version: $LATEST
             # Processing bucket number-[0]
             # Found Bucket: alfredo-noah
             # Processing bucket number-[1]
@@ -27,4 +29,10 @@ def number_of_buckets(num):
         else:
             return
 
-number_of_buckets[2]
+def lambda_handler(event, context):
+    # Grab the number out of an event
+    number = event['number']
+    # Run that number
+    number_of_buckets(number)
+
+    return number
